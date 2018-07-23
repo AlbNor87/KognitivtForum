@@ -1,0 +1,52 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+    color: $KF-Grey;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: $KF-Grey;
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: $KF-BlueLight;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+.view {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen
+and (min-width : 375px)
+and (max-width : 667px)
+and (orientation : portrait) {
+
+    .mobile {
+        display: initial;
+    }
+
+}

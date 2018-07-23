@@ -1,0 +1,40 @@
+.burgermenu {
+  margin-right: 15px;
+  display: none;
+  overflow: visible;
+  cursor: pointer;
+}
+  
+.top, .mid, .bot {
+  transition: all .4s;
+}
+
+.burgermenu.active .top {
+  transform: rotate(225deg)translateY(40%);
+  transform-origin: center;
+}
+.burgermenu.active .mid {
+  transform: translateX(100px);
+  opacity: 0;
+}
+.burgermenu.active .bot {
+  transform: rotate(-225deg)translateY(-40%);
+  transform-origin: center;
+}
+
+.bar {
+  fill: $KF-Blue;
+  width: 55px; 
+  height: 7px;
+}
+
+@media only screen
+and (min-width : 375px)
+and (max-width : 667px)
+and (orientation : portrait) {
+
+  .burgermenu {
+    display: block;
+  }
+
+}
